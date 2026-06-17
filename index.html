@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World</title>
+    <title>Saad Zehri </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .box {
+            background: rgba(0,0,0,0.3);
+            padding: 30px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login { background: green; color: white; }
+        .signup { background: orange; color: white; }
+        .logout { background: red; color: white; }
+
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>My first website</p>
+
+<div class="container">
+
+    <h1>Saad Zehri</h1>
+
+    <div class="box">
+        <p><b>Software Engineer</b></p>
+        <p>BUITEMS (Balochistan University of Information Technology, Engineering and Management Sciences)</p>
+        <p>Welcome to my personal website 🚀</p>
+    </div>
+
+    <div>
+        <button class="login" onclick="login()">Login</button>
+        <button class="signup" onclick="signup()">Signup</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <h2 id="status">Not logged in</h2>
+
+</div>
+
+<script>
+    function login() {
+        document.getElementById("status").innerHTML = "Logged in as Saad Zehri ✔";
+    }
+
+    function signup() {
+        document.getElementById("status").innerHTML = "Account created (demo mode) ✔";
+    }
+
+    function logout() {
+        document.getElementById("status").innerHTML = "Not logged in";
+    }
+</script>
+
 </body>
 </html>
